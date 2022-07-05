@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Police-project</title>
+    <!-- Favicon icon -->
+    <!-- This page css -->
+    <!-- Custom CSS -->
+   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+   <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+  
+</head>
+
+    <body>
+
+
+    <!----------------------top-content-----------------------------
+      =========================start===========================
+            ------------------------------------------------------------>
+        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top" >
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+              <!-- Toggler -->
+              <div class="top-left-content d-flex gap-2 align-items-center">
+                    <a href="index.html"><img src="img/police_text_logo.png" class="img-fluid" style="max-width: 180px;position: relative;overflow: hidden;"></a>
+                    <button  class="navbar-toggler d-block d-lg-none"  onclick="openSidebar()">
+                   <!--  <i class="fas fa-bars fa-lg"></i> -->
+                    <span class="toggler-icon top-bar"></span>
+                      <span class="toggler-icon middle-bar"></span>
+                        <span class="toggler-icon bottom-bar"></span>
+                </button>
+                </div> 
+
+                <div class="top-content">
+                    <span class="d-none d-sm-block"><i class="ti ti-list-search"></i></span>
+                    <div class="log-out">
+                        <ul class="list-unstyled dropdown">
+                            <li><a href="#" class="nav-link dropdown-toggle " data-bs-toggle="collapse" data-bs-target="#log-out"><i class="ti ti-user-circle"></i><!-- <img src="img/"> --></a>
+                                <ul class="list-unstyled collapse log-out-menu" id="log-out">
+                                    <li><a href="intex.html">Log-Out <i class="ti ti-logout"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+     <!----------------------top-content-----------------------------
+      =========================End===========================
+            ------------------------------------------------------------>
+
+    <!----------------------sidebar----------------------------
+      =========================start===========================
+            ------------------------------------------------------------>
+        <section class="right-main-right">
+            <div class="row gx-0">
+                <div class="col-lg-2">
+                        <aside id="sidebar">
+                          
+                           <div class="left-scroll">
+                            <ul class="list-unstyled menu" >
+                                <li class="nav-item"><a href="#" class="nav-link"><span> <i class="ti ti-home"></i> Home</span></a></li>
+                                <li class="nav-item"><a href="#" class="nav-link"><span> <i class="ti ti-brand-airtable"></i> Dashbord</span></a></li>
+                                <li class="pb-4"><hr class="dropdown-divider"></li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#submenu-1" ><span><i class="ti ti-layout-grid"></i></span> Dashbord-1 <i class="fas fa-angle-down rotate-icon"></i></a>
+                                    <ul class="inner-menu collapse" id="submenu-1" data-bs-parent="#sidebar">
+                                        <li><a href="#" class="dropdown-item">Home-1</a></li>
+                                        <li><a href="#" class="dropdown-item">Home-1</a></li>
+                                        <li><a href="#" class="dropdown-item">Home-1</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#submenu-2"><span>
+                                    <i class="ti ti-chart-pie"></i></span> Dashbord-1 <i class="fas fa-angle-down rotate-icon"></i></a>
+                                    <ul class="inner-menu collapse" id="submenu-2" data-bs-parent="#sidebar">
+                                        <li><a href="#" class="dropdown-item">Home-1</a></li>
+                                        <li><a href="#" class="dropdown-item">Home-1</a></li>
+                                        <li><a href="#" class="dropdown-item">Home-1</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#submenu-3"><span>
+                                    <i class="ti ti-clipboard-list"></i></span> Dashbord-1 <i class="fas fa-angle-down rotate-icon"></i></a>
+                                    <ul class="inner-menu collapse" id="submenu-3" data-bs-parent="#sidebar">
+                                        <li><a href="#" class="dropdown-item">Home-1</a></li>
+                                        <li><a href="#" class="dropdown-item">Home-1</a></li>
+                                        <li><a href="#" class="dropdown-item">Home-1</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#submenu-4"><span>
+                                    <i class="ti ti-stack-2"></i></span> Dashbord-1 <i class="fas fa-angle-down rotate-icon"></i></a>
+                                    <ul class="inner-menu collapse" id="submenu-4" data-bs-parent="#sidebar" >
+                                        <li><a href="#" class="dropdown-item">Home-1 </a></li>
+                                        <li><a href="#" class="dropdown-item">Home-1</a></li>
+                                        <li><a href="#" class="dropdown-item">Home-1</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#submenu-5"><span> 
+                                    <i class="ti ti-list-check"></i></span> Dashbord-1 <i class="fas fa-angle-down rotate-icon"></i></a>
+                                    <ul class="inner-menu collapse" id="submenu-5" data-bs-parent="#sidebar">
+                                        <li><a href="#" class="dropdown-item">Home-1</a></li>
+                                        <li><a href="#" class="dropdown-item">Home-1</a></li>
+                                        <li><a href="#" class="dropdown-item">Home-1</a></li>
+                                    </ul>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                            <a href="index.html" class="bottom-log">Log-Out <i class="ti ti-logout"></i></a>
+                        </aside>
+                </div>
+    <!----------------------sidebar----------------------------
+      =========================End===========================
+            ------------------------------------------------------------>
+
+        <!----------------------right-main---content----------------------------
+            =========================start===========================
+            ------------------------------------------------------------>
+            <div class="col-lg-10 right-content form_1 px-4">
+                <div class="right-main-content ">
+                    <form class="forms-sample" method="post" action="#" id="myform" enctype="multipart/form-data">
+                       <div class="group-form p-lg-4 p-3" style="font-weight: 700;">
+                          <h4 class="text-center">Add Kirayedar</h4>
+                          <div class="slide-text st-two">
+                             <h1 style="margin-top: 1%;">
+                                मकान मालिक सब चीज़ सही भरवाये वरना 188 की कार्यवाही की जाएगी......! 
+                             </h1>
+                          </div>
+                          <?php                
+                             if(isset($_GET['did'])) {
+                                 $test = $_GET['did'];
+                             }
+                                     $sql = "SELECT * FROM add_property WHERE id='$test'"; 
+                             $query = mysqli_query($conn,$sql);
+                             while($res = mysqli_fetch_array($query))
+                                 {
+                             
+                             $ownr_nam = $res['ownr_nam'];
+                              $ownr_mbl = $res['ownr_mbl'];
+                              $ownr_hfnm = $res['ownr_hfnm'];
+                              $cen_email = $res['owner_hfmb'];
+                              $firm_name = $res['firm_name'];
+                              $house_no = $res['house_no'];
+                              $cloc = $res['dob'];
+                              $status = $res['rental_addrs'];
+                              $thana = $res['p_thana'];
+                              $describe = $res['city'];
+                              $state = $res['state'];
+                             
+                             
+                             $cmysql = "select * from city_tbl where id='$describe'";
+                             $cquery = mysqli_query($conn,$cmysql);
+                             while($cres=mysqli_fetch_array($cquery))
+                             { $city = $cres['cityname']; 
+                             
+                             $cmysql = "select * from states where id='$state'";
+                             $cquery = mysqli_query($conn,$cmysql);
+                             while($cres=mysqli_fetch_array($cquery))
+                             { $states = $cres['s_name']; 
+                             
+                             ?>
+                          <div  style="border: 3px solid #fff;border-radius: 20px;padding: 10px 15px;">
+                             <div class="group-form-felid row">
+                                <div class="Services col-md-4">
+                                   <input type="text" class="form-control " id="state" name="state" value="<?php echo $states;?>" readonly>
+                                </div>
+                                <div class="Services col-md-4">
+                                   <input type="text" class="form-control" id="city" name="city" value="<?php echo $city;?>" readonly>
+                                </div>
+                                <div class="Services col-md-4">
+                                   <input type="text" class="form-control" id="thana" name="thana" value="<?php echo $thana;?>" readonly>
+                                </div>
+                             </div>
+                             <div class="group-form-felid row">
+                                <div class="Services ms-auto col-md-3">
+                                   <label for="stdroll" class="form-label">House No. / मकान संख्या</label>
+                                   <input type="text" class="form-control" id="house" placeholder="" name="house" Readonly value="<?php echo $house_no;?>" >
+                                </div>
+                             </div>
+                             <div class="group-form-felid row">
+                                <div class="Services col-md-6">
+                                   <label for="stdn" class="form-label">makaan malik ka naam / मकान मालिक का नाम</label>
+                                   <input type="text" class="form-control" id="malik_naam" name="malik_naam" value="<?php echo $ownr_nam;?>" readonly>
+                                </div>
+                                <div class="Services col-md-6">
+                                   <label for="stdn" class="form-label">Pita/Pati ka naam / पिता/पति का नाम</label>
+                                   <input type="text"  class="form-control" id="malik_pati" name="malik_pati" value="<?php echo $ownr_hfnm;?>" readonly>
+                                </div>
+                             </div>
+                             <div class="group-form-felid row">
+                                <div class="Services col-md-6">
+                                   <label for="stdn" class="form-label">Firm/Sansatha ka naam / फर्म/संस्था का नाम:</label>
+                                   <input type="text" class="form-control" id="malik_sansatha" name="malik_sansatha" value="<?php echo $firm_name;?>" readonly>
+                                </div>
+                                <div class="Services col-md-6">
+                                   <label for="stdn" class="form-label">Mobile no. / मोबाइल नं.</label>
+                                   <input type="text"  class="form-control" id="malik_contact" name="malik_contact"value="<?php echo $ownr_mbl;?>" readonly>
+                                </div>
+                             </div>
+                             <div class="">
+                                <label for="location" class="form-label">Makaan/Firm/Sansatha full Address / मकान/फर्म/संस्था का पूरा पता</label>
+                                <textarea class="form-control" id="malik_adres" name="malik_adres" rows="2" readonly><?php echo $status;?></textarea>
+                             </div>
+                          </div>
+                          <?php  } }
+                             }
+                              ?>
+                          <div style="border:3px solid #014797;border-radius:20px;padding:10px 15px; margin-top:5%">
+                             <div class="group-form-felid row">
+                                <div class="Services col-md-8">
+                                   <div class="checkbox-in float-lg-start ps-lg-1">
+                                      <input class="form-check-input" type="radio" name="krdr_typ" id="krdr_typ" value="kiraayedaar">
+                                      <label class="form-label" for="flexRadioDefault1">Kiraayedaar / किरायदार </label>      
+                                   </div>
+                                   <div class="checkbox-in float-lg-start ps-lg-4">
+                                      <input class="form-check-input" type="radio" name="krdr_typ" id="krdr_typ" value="gharelu naukar" >
+                                      <label class="form-label" for="flexRadioDefault1">Gharelu naukar / घरेलु नौकर</label>
+                                   </div>
+                                   <div class="checkbox-in float-lg-start ps-lg-4">
+                                      <input class="form-check-input" type="radio" name="krdr_typ" id="krdr_typ" value="Karamchaari" >
+                                      <label class="form-label" for="flexRadioDefault1">Karamchaari / कर्मचारी</label>
+                                   </div>
+                                   <input type="text" class="form-control" id="krdr_naam" name="krdr_naam" placeholder="Enter Full Name" autocomplete="off" required="require">
+                                </div>
+                                <div class="Services col-md-4">
+                                   <label for="stdn" class="form-label">Pita/Pati Ka Naam / 
+                                   पिता/पति का नाम</label>
+                                   <input type="text"  class="form-control" id="krdr_pati" name="krdr_pati" placeholder="Enter Full Name " autocomplete="off" required="require">
+                                </div>
+                             </div>
+                             <div class="group-form-felid row">
+                                <div class="Services col-md-4">
+                                   <label for="text" class="form-label">Kirayedar / किरायदार Image</label>
+                                   <input type="file" name="primage" id="primage" placeholder="Upload image" class="form-control file-upload-default">
+                                </div>
+                                <div class="Services col-md-4">
+                                   <label for="text" class="form-label">Kirayedar Contact / किरायदार संपर्क</label>
+                                   <input type="text" class="form-control" id="krdr_cntct" placeholder="Enter Mobile No." name="krdr_cntct"autocomplete="off" required="require">
+                                </div>
+                                <div class="Services col-md-4">
+                                   <label for="text" class="form-label">Mail id: / मेल</label>
+                                   <input type="email" class="form-control" id="mail" placeholder="Enter Mobile No." name="mail"autocomplete="off" required="require">
+                                </div>
+                             </div>
+                             <div class="group-form-felid row">
+                                <div class="Services col-md-4">
+                                   <label for="image" class="form-label">ID Type / आईडी का प्रकार</label>
+                                   <select class="form-select" id="idtype" name="idtype" autocomplete="off" required="require">
+                                      <option>--Select ID Type--</option>
+                                      <option>Adhar card / आधार कार्ड</option>
+                                      <option>Pan Card / पैन कार्ड</option>
+                                      <option>Voter Id / वोटर कार्ड </option>
+                                      <option>Driving License / ड्राइविंग लाइसेंस</option>
+                                      <option>Other / अन्य</option>
+                                   </select>
+                                </div>
+                                <div class="Services col-md-4">
+                                   <label for="image" class="form-label">ID/आईडी Image</label>
+                                   <input type="file" name="idimage" id="idimage" placeholder="Upload image" class="form-control file-upload-default">
+                                </div>
+                                <div class="Services col-md-4">
+                                   <label for="text" class="form-label">ID No. / आईडी संख्या</label>
+                                   <input type="text" class="form-control" id="idn" name="idn" placeholder="Enter Id no."autocomplete="off" required="require">
+                                </div>
+                             </div>
+                             <div class="group-form-felid row">
+                                <div class="Services col-md-6">
+                                   <label for="text" class="form-label">Work Place / कार्यस्थल</label>
+                                   <input type="text" class="form-control" id="Vyavsaay" name="Vyavsaay" placeholder="Enter Vyavsaay"autocomplete="off" required="require">
+                                </div>
+                                <div class="Services col-md-6">
+                                   <label for="text" class="form-label">Workplace Contact / कार्यस्थल संपर्क</label>
+                                   <input type="text" class="form-control" id="wrk_cntct" placeholder="Enter Mobile No." name="wrk_cntct"autocomplete="off" required="require">
+                                </div>
+                             </div>
+                             <div class="">
+                                <label for="location" class="form-label">Workplace Address / कार्यस्थल का पता</label>
+                                <textarea class="form-control" id="wrk_addr" name="wrk_addr" rows="2"></textarea>
+                             </div>
+                             <div class="group-form-felid row" style="margin-top: 1%;">
+                                <label for="location" class="form-label">Permanent Address / स्थायी पता</label>
+                                <div class="Services col-lg-4 col-md-4">
+                                   <select class="form-select" id="pstate" name="pstate"autocomplete="off" required="require">
+                                      <option value="">--Select State--</option>
+                                      <?php while($res = mysqli_fetch_array($country_qry))
+                                         {?>
+                                      <option value ="<?php echo $res['id'];?>"><?php echo $res['s_name'];}?></option>
+                                   </select>
+                                </div>
+                                <div class="Services col-lg-4 col-md-4">
+                                   <select class="form-select" id="pcity" name="pcity" autocomplete="off" required="require">
+                                      <option value="">--Select City--</option>
+                                   </select>
+                                </div>
+                                <div class="Services col-lg-4 col-md-4">
+                                   <input type="text" class="form-control" id="pthana" name="pthana" autocomplete="off" required="require" placeholder="Fill Thana">
+                                </div>
+                             </div>
+                             <div class="">
+                                <textarea class="form-control" id="krdr_addr" name="krdr_addr" rows="2"></textarea>
+                             </div>
+                             <div style="border: 3px solid #fff;border-radius: 20px;margin: 20px 20px 10px 20px; padding: 10px 20px;">
+                                <div class="member-details">
+                                   <h5 class="text-center py-4">Sadasyon ka vivran / सदसयों का विवरण</h5>
+                                   <div class="group-form-felid row " >
+                                      <div class="Services col-md-2"  style="margin-left: 4.1%;">
+                                         <label for="location" class="form-label">Gender / लिंग</label>
+                                      </div>
+                                      <div class="Services col-md-2">
+                                         <label for="location" class="form-label">Name / नाम</label>
+                                      </div>
+                                      <div class="Services col-md-2" style="margin-left: 2.6%;">
+                                         <label for="location" class="form-label">Age / आयु</label>
+                                      </div>
+                                      <div class="Services col-md-2" style="margin-left: -1%;">
+                                         <label for="location" class="form-label">ID Type / आईडी का प्रकार</label>
+                                      </div>
+                                      <div class="Services col-md-2" style="margin-left: 3.5%;">
+                                         <label for="location" class="form-label">Type Id / आईडी संख्या लिखें</label>
+                                      </div>
+                                      <div id="product">
+                                         <?php require_once("input.php") ?>
+                                      </div>
+                                      <div class="two-btn" style="margin-left: 7%; font-weight: 700;"> 
+                                          <input type="button" class="submit-btn me-4 active" name="add_item" value="Add More" onClick="addMore();" />
+                                         <input type="button" class="submit-btn me-4 active" name="del_item" value="Delete" onClick="deleteRow();" />
+                                         <span class="success"><?php if(isset($message)) { echo $message; }?></span>
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                             <div class="group-form-felid row" >
+                                <div class="Services col-md-6">
+                                   <label for="text" class="form-label">Sthaniya pahchankarta ka naam / स्थानीय पहचानकर्ता का नाम</label>
+                                   <input type="text" class="form-control" id="pchnkrt_nam" placeholder="Enter pahchankarta ka naam" name="pchnkrt_nam"autocomplete="off" required="require">
+                                </div>
+                                <div class="Services col-md-6">
+                                   <label for="location" class="form-label">Full Adddress / पूरा पता</label>
+                                   <textarea class="form-control"  id="pchnkrt_addr" name="pchnkrt_addr" rows="1"></textarea>
+                                </div>
+                             </div>
+                             <div class="Services">
+                                <label for="text" class="form-label">Document Upload / दस्तावेज़ अपलोड</label>
+                                <input type="file" name="docimage" id="docimage" placeholder="Upload image" class="form-control file-upload-default">
+                             </div>
+                          </div>
+                          <div class="two-btn" style="font-size: 17px; font-weight: 700;">
+                             <button type="submit" class="submit-btn me-4 active" name="submit" id="submit" >Submit</button>
+                             <!-- <button type="reset" class="cancel-btn ">Cancel</button> -->
+                          </div>
+                       </div>
+                    </form>   
+                </div>
+                <p class=" text-center mx-auto mt-3 mb-0 copy-right" style="width:min(900px,50%); color: #fff; border-radius: 15px;font-size: 14px;background: #084298">Design by: <a href="#" style="color: #fff">Loknaad.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+        <!----------------------right-main---content----------------------------
+            =========================End===========================
+            ------------------------------------------------------------>
+
+
+
+
+    
+
+    
+
+        <!--Custom JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        </script>
+
+        <script src="https://kit.fontawesome.com/201ed92cd4.js" crossorigin="anonymous"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   
+        <script>
+            var sidebarOpen = false;
+            var sidebar = document.getElementById("sidebar");
+
+            function openSidebar(){
+                    if(!sidebarOpen){
+                    sidebar.classList.toggle("sidebar-responsive");
+                    sidebarOpen = toggleVal;
+                }
+            }
+           
+              /////*=============toggle===button========*////////
+         $(".navbar-toggler").click(function() {
+          if ($ (this).hasClass("collapsed") ) {
+            $(this).removeClass("collapsed");
+            }
+            else{
+               $("navbar-toggle").removeClass("collapsed");
+               $(this).addClass("collapsed");
+            } 
+         });  
+         /////*=============toggle===button========*//////// 
+      </script>
+
+
+
+</body>
+    </html>

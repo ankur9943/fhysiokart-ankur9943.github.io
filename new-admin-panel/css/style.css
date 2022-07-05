@@ -1,0 +1,294 @@
+   body *{
+       
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none; 
+    }
+         /* entire scrollbar */
+   /* Let's get this party started */
+
+    #sidebar{
+        background: #fff;
+        transition: all 0.3s linear 0s;
+        height: 100vh;
+        padding:80px 15px 0px 15px;
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+        transform: translate(0px);
+        overflow: hidden;
+        position: relative;
+    }
+    .menu .nav-item .nav-link{
+        color: #084298;
+        font-size: clamp(1rem, 2vw, 17px);
+        font-weight: 500;
+        line-height: 24px;
+        transition: all .3s ease-in-out;
+        padding-block: 7px;
+        margin-block: 8px;
+        position: relative;
+    }
+    .inner-menu .dropdown-item{
+        display: inline-flex;
+        padding-block: .5rem;
+        color: #084298;   
+    }
+    .inner-menu{
+        border-left: 2px solid  #084298;
+        margin-left: 2.2rem;
+    }
+    .right-main-content{
+        background: rgba(255,255,255,0.5);
+        border-radius: 30px;
+    }
+    .right-content{
+        overflow-y: scroll;
+        height: 100vh;
+        padding-bottom: 40px;
+         padding-top: 100px; 
+    }
+    .rotate-icon{
+       position: absolute;
+       right: .8rem;
+       font-size: 14px;
+       transition: all.3s ease-in-out;
+       vertical-align: middle;
+       top: .7rem;
+    }
+    .inner-menu .collapse.show  .rotate-icon{ 
+        transform: rotate(180deg);
+    }
+    #main-navbar{
+        padding-top: 0.5625rem;
+        height: 75px;
+        box-shadow: 0 2px 20px 0 rgb(0 0 0 / 5%);   
+    }
+    .sidebar-responsive,.navbar-toggler {
+        transform: translate(0%)!important;
+    }
+    .top-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .left-scroll{
+        overflow-y: auto;
+        height: 500px;
+    }
+    .top-content i{
+        font-size: clamp(1.5rem, 2vw, 26px);
+         color: #084298;
+    }
+    .log-out-menu{
+        position: absolute;
+        top: 70px;
+        left: -45px;
+        border: 1px solid #084298;
+        padding: 5px 10px;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 500;
+        transition: all .3s ease-in-out;
+    }
+    .log-out-menu a{
+        color: #084298;
+    }
+    .bottom-log{
+        position: fixed;
+       inset: auto 0 0 0;
+        background: #084298;
+        color:#fff!important;
+        padding: 10px 0px;
+        margin: auto;
+        text-align: center;
+        font-size: clamp(1rem, 2vw, 1.2rem);
+    }
+    @media (min-width: 1400px){
+         #main-navbar {
+            padding-left: 240px;  
+        }
+    }
+    @media (max-width: 992px){
+        #sidebar{
+            transform: translate(-140%);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 240px;
+            height: 100vh;
+        }
+    }
+    @media screen and (max-width: 442px){
+        .top_logo img{
+            height: 50px
+         }
+    }
+
+    .forms-sample :is(.form-control, .form-select ){
+        border: 1px solid #338cff;
+        box-shadow: none;
+        color: #084298;
+    }
+    .forms-sample :is(.Services){
+        margin: 8px 0px;
+    }
+    .forms-sample :is(.form-label){
+        color:  #084298;
+    }
+    .submit-btn{
+        padding: 7px 30px;
+        border-radius: 20px;
+        color: #fff;
+        background-color: #338cff;
+        border: 1px solid #338cff;
+        transition: .3s ease-in-out 0s;
+        margin-top: 15px;
+    }
+    .submit-btn:hover{
+        background: transparent;
+        color:#fff; 
+    }
+    .form_1{
+        background: #338cff;
+        min-height: 100vh;
+       
+    }
+    .group-form h4{
+        color: #084298;
+        font-weight: 600;
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+        padding-top: 10px;
+    }
+    .form1{
+        background: rgba(255,255,255,0.5);
+        border-radius: 20px;
+        padding-bottom: 20px
+    }
+    .top_logo{
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 10px;
+        background: #fff;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .top_logo img{
+        aspect-ratio: 2 / 1;
+        max-width: 100%;
+        display: block;
+        height: 78px
+    }
+
+
+    .group-form{
+        overflow-x: hidden!important;
+    }
+     
+    .slide-text.st-two h1 {
+        color: #000;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        text-transform: none;
+        font-size: 17px;
+       
+        z-index: 1;
+        margin-bottom: 11px;
+        animation: slide-left 10s linear infinite;
+        transition:all .5s ease-in-out 0s;
+    }
+    @keyframes slide-left{
+      from {
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+      }
+      to {
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+      }
+    }
+
+
+
+
+
+
+.navbar-toggler {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    transition: .5s ease-in-out;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navbar-toggler .toggler-icon {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 85%;
+    background: #000;
+    border-radius: 1px;
+    opacity: 1;
+    transform: translate(0deg);
+    transition: .250s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+
+    box-shadow: none;
+    outline: none;
+    border: 0;
+}
+ .collapsed .top-bar {
+    margin-top: 0px!important;;
+    transform: rotate(-135deg)!important
+}
+
+ .collapsed .middle-bar {
+    opacity: 0!important;
+}
+
+ .collapsed .bottom-bar {
+    transform: rotate(135deg)!important;
+    margin-top: 0px!important;
+}
+
+.navbar-toggler .top-bar {
+    margin-top: -6px;
+    transform: none;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 6px;
+    transform: none
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #ddd;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+
